@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EX 14</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -18,14 +18,21 @@
 </head>
 <body>
 
-    <div class="card">
-        <div class="card-body">
-          If you see this, the app is working :D
-        </div>
-    </div>
+    <main>
+        <p>Je change de couleur quand la souris me survole.</p>
+    </main>
     
     <script type="text/javascript">
         // Write JS code here
+        const p = document.querySelector('p')
+
+        p.addEventListener('mouseenter', () => {
+            p.style.backgroundColor = 'green'
+        })
+
+        p.addEventListener('mouseleave', () => {
+            p.style.backgroundColor = 'transparent'
+        })
     </script>
 </body>
 </html>

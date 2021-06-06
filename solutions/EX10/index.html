@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EX 10</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -17,7 +17,6 @@
     </style>
 </head>
 <body>
-
     <div class="card">
         <div class="card-body">
           If you see this, the app is working :D
@@ -26,6 +25,24 @@
     
     <script type="text/javascript">
         // Write JS code here
+        class Accumulator {
+            value
+
+            constructor(value = 0) {
+                this.value = value
+            }
+
+            read() {
+                const stringValue = prompt('Enter a number', 0)
+                const numberValue = Number(stringValue)
+
+                this.value += numberValue
+            }
+        }
+
+        const acc = new Accumulator(2)
+        acc.read()
+        console.log(acc.value)
     </script>
 </body>
 </html>
